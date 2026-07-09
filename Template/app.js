@@ -20,7 +20,8 @@ cart:'<svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy=
 star:'<svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
 card:'<svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>',
 gift:'<svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>',
-arrow:'<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>'
+arrow:'<svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>',
+settings:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>'
 };
 
 function ap(p){const s=document.documentElement.style;
@@ -172,8 +173,8 @@ function ph6(p){return`<div class="phone-frame"><div class="phone-screen">${stat
     <div style="text-align: center;"><div style="font-size: 11px; color: ${p.fg}; font-weight: 600;">Đã hoàn thành</div><div style="font-size: 18px; font-weight: 700; color: ${p.pr}; margin-top: 4px;">45</div></div>
   </div>
 </div>
-<div class="phone-list-item"><div class="phone-list-avatar" style="background:${p.sm}; color:${p.fg}">💳</div><div class="phone-list-info"><div class="phone-list-title">Ví ShopeePay / Liên kết ngân hàng</div><div class="phone-list-sub">Đã liên kết Vietcombank</div></div></div>
-<div class="phone-list-item"><div class="phone-list-avatar" style="background:${p.sm}; color:${p.fg}">⚙️</div><div class="phone-list-info"><div class="phone-list-title">Thiết lập tài khoản</div><div class="phone-list-sub">Thông tin nhận hàng, mật khẩu</div></div></div>
+<div class="phone-list-item"><div class="phone-list-avatar" style="background:${p.sm}; display: flex; align-items: center; justify-content: center;">${IC.card.replace('stroke:var(--p-muted)','stroke:'+p.mu).replace('width="24"','width="20"')}</div><div class="phone-list-info"><div class="phone-list-title">Ví ShopeePay / Liên kết ngân hàng</div><div class="phone-list-sub">Đã liên kết Vietcombank</div></div></div>
+<div class="phone-list-item"><div class="phone-list-avatar" style="background:${p.sm}; display: flex; align-items: center; justify-content: center;">${IC.settings.replace('stroke:var(--p-muted)','stroke:'+p.mu).replace('width="24"','width="20"')}</div><div class="phone-list-info"><div class="phone-list-title">Thiết lập tài khoản</div><div class="phone-list-sub">Thông tin nhận hàng, mật khẩu</div></div></div>
 </div>${bnav(4)}</div></div>`;}
 
 function buildPanel(p,i){

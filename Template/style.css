@@ -131,6 +131,7 @@ body{font-family:var(--t-body);background:var(--shell-bg);color:var(--shell-fg);
 /* Phone List Item */
 .phone-list-item{display:flex;align-items:center;gap:12px;padding:12px;background:var(--p-surface);border-radius:12px;margin-bottom:8px;border:1px solid var(--p-border)}
 .phone-list-avatar{width:40px;height:40px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--p-on-control)}
+.phone-list-avatar svg{width:20px;height:20px;stroke:var(--p-muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .phone-list-info{flex:1;min-width:0}
 .phone-list-title{font-size:13px;font-weight:600;color:var(--p-fg);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .phone-list-sub{font-size:11px;color:var(--p-muted);margin-top:1px}
